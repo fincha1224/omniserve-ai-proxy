@@ -7,7 +7,6 @@ export default {
       'Access-Control-Allow-Headers': 'Content-Type',
     };
 
-    // Handle preflight
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: corsHeaders });
     }
